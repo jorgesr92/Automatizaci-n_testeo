@@ -39,9 +39,16 @@ public class Steps implements En {
         System.out.println("This Step open the Chrome and launch the application.");
     }
 
+
     @When("^Enter the Username and Password$")
     public void enter_the_Username_and_Password() {
         System.out.println("This step enter the Username and Password on the login page.");
+        driver.quit();
+    }
+
+    @When ("^Enter the Hotel name$")
+    public void enter_the_Hotel_Name() {
+        System.out.println("This step enter the Hotel name.");
         driver.quit();
     }
 

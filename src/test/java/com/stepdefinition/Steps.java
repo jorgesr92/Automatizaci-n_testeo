@@ -32,19 +32,19 @@ public class Steps implements En {
 
     @Then("^Reset the credential$")
     public void open_the_Firefox_and_launch_the_application() {
-//        WebDriver driver;
-//        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Server\\Drivers\\chromedriver.exe");
-//        ChromeOptions optionsC = new ChromeOptions();
-//        optionsC.setAcceptInsecureCerts(true);
-//        optionsC.addArguments("--allow-insecure-localhost");
-//        optionsC.addArguments("--start-maximized");
-//        driver = new ChromeDriver(optionsC);
-//        driver.get("https:/www.xxxxxxx.com/es");
-//        driver.manage().window().maximize();
-//        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-//        driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
-//
-//        driver.quit();
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Server\\Drivers\\chromedriver.exe");
+        ChromeOptions optionsC = new ChromeOptions();
+        optionsC.setAcceptInsecureCerts(true);
+        optionsC.addArguments("--allow-insecure-localhost");
+        optionsC.addArguments("--start-maximized");
+        driver = new ChromeDriver(optionsC);
+        driver.get("https:/www.xxxxxxx.com/es");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
+
+        driver.quit();
 
         System.out.println("This Step open the Chrome and launch the application.");
     }

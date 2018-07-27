@@ -20,7 +20,7 @@ public class Steps implements En {
 //        Then("^Reset the credential$", Steps::Reset_the_credential);
 //    }
 
-    @Given("^Open the Chrome and launch the application$")
+    @Given("^Open the Chrome and launch the landing page$")
     public void Reset_the_credential() {
         System.out.println("This step click on the Reset button.vsfgsg");
     }
